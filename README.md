@@ -243,24 +243,7 @@ curl -X POST "http://localhost:8000/api/messages/send" \
 
 All tables are automatically created on application startup using async SQLAlchemy with PostgreSQL.
 
-## Email Configuration
 
-The system supports sending emails when messages are sent. To enable:
-
-1. Set `ENABLE_EMAIL=True` in your `.env` file
-2. Configure your SMTP settings:
-   - **Gmail**: Use an App Password (not your regular password)
-     - Enable 2-Step Verification
-     - Go to Google Account > Security > App passwords
-     - Generate an app password and use it as `MAIL_PASSWORD`
-   - **Other providers**: Use their SMTP settings
-
-### Email Providers Examples:
-- **Gmail**: `smtp.gmail.com`, port `587`, STARTTLS
-- **Outlook**: `smtp-mail.outlook.com`, port `587`, STARTTLS
-- **Yahoo**: `smtp.mail.yahoo.com`, port `587`, STARTTLS
-
-If email is disabled or fails, messages are still logged in the database.
 
 ## Security Notes
 
