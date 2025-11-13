@@ -1,0 +1,7 @@
+# Database Configuration
+DATABASE_URL=postgresql+asyncpg://privateroute_user:your_secure_password@localhost:5432/privateroute
+
+# JWT Configuration
+SECRET_KEY=your-secret-key-here-change-this-in-production-use-openssl-rand-hex-32
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
