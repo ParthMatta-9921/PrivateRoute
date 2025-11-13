@@ -78,19 +78,7 @@ ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
-**Optional - Email Configuration:**
-If you want to send emails when messages are sent, add these:
-```
-ENABLE_EMAIL=True
-MAIL_USERNAME=your-email@gmail.com
-MAIL_PASSWORD=your-app-password
-MAIL_FROM=noreply@privateroute.com
-MAIL_FROM_NAME=PrivateRoute System
-MAIL_PORT=587
-MAIL_SERVER=smtp.gmail.com
-MAIL_STARTTLS=True
-MAIL_SSL_TLS=False
-```
+
 
 **Notes:** 
 - **Database**: Replace `your_secure_password` with your actual PostgreSQL password
